@@ -33,8 +33,8 @@ app.post('/payment', async (req, res) => {
                 "payment_method": "paypal"
             },
             "redirect_urls": {
-                "return_url": `http://localhost:8004/success?totalprice=${totalprice}`,
-                "cancel_url": "http://localhost:8004/failed"
+                "return_url": `https://paypal-v2bn.onrender.com/success?totalprice=${totalprice}`,
+                "cancel_url": "https://paypal-v2bn.onrender.com/failed"
             },
             "transactions": [{
                 "item_list": {
